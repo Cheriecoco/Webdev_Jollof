@@ -24,8 +24,8 @@ The Nigerian Jollof Rice Website is a dedicated platform celebrating the culinar
 
 ## Screenshots
 
-![Screenshot 1](\Screenshot1.png)
-![Screenshot 2](\Screenshot2.png)
+![Screenshot 1](Screenshot1.png)
+![Screenshot 2](Screenshot2.png)
 
 ## How to Contribute
 
