@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nigerian vs Ghanaian Jollof Rice</title>
+    <link rel="stylesheet" type="text/css" href="NvsGjollof.css">
+    <script src="Poll.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Nigerian vs Ghanaian Jollof Rice</h1>
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="recipe.html">Recipe</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="NvsGJollof.html">Nigerian vs Ghanaian Jollof</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="hero-image">
+        <img src="NGvsGH-flag.jpeg" alt="Nigerian and Ghanaian Flag">
+    </div>
+
+    <section class="jollof-debate">
+        <article class="nigvsgha-jollof">
+            <h2>The Jollof Debate</h2>
+            <p>Majority of West Africans should know about the ongoing friendly battle between Nigerians and Ghanaians
+                over Jollof rice...better known as Jollof wars.</p>
+            <p>Both countries have their own unique way of preparing this tasty dish, making it difficult to establish
+                which version is actually better.</p>
+            <p></p>
+        </article>
+
+        <article class="ghanaian-jollof">
+            <h2>Ghanaian Jollof Rice</h2>
+            <p>Ghanaian Jollof rice is another delicious variation of the popular dish. It is known for its sweeter
+                flavour compared to Nigerian Jollof.</p>
+            <img src="ghanaian_jollof.jpg" alt="Ghanaian Jollof Rice">
+            <ul>
+                <li>2 cups basmati rice</li>
+                <li>4 medium-sized tomatoes</li>
+                <li>tomato paste</li>
+                <li>chopped 2 large onions</li>
+                <li>chopped 2 scotch bonnet peppers (or to taste)</li>
+                <li>chopped 1 teaspoon ginger</li>
+                <li>grated 2 cloves garlic</li>
+                <li>1 tablespoon smoked paprika</li>
+                <li>1 teaspoon curry powder</li>
+                <li>2 bay leaves</li>
+                <li>2 cups chicken or vegetable stock</li>
+                <li>Salt and pepper to taste</li>
+                <li>Stock cubes</li>
+                <li>1/4 cup vegetable oil</li>
+                <li>Jollof Seasoning (optional)</li>
+                <li>Fresh coriander or parsley for garnish (optional)</li>
+                <li>1 pound chicken or beef (optional)</li>
+            </ul>
+            <div class="jollof-item">
+                <iframe width="560" height="300"
+                    src="https://www.youtube.com/embed/BUqm9g1WNlI?si=gZnRNBUkFox-fJNT&amp;start=61" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </article>
+
+        <article class="nigerian-jollof">
+            <h2>Nigerian Jollof</h2>
+            <p>Nigerian Jollof (known as Party Jollof) is known for its spicer and smoky flavour.</p>
+            <img src="nigerian_jollof.jpeg" alt="Nigerian Jollof Rice">
+            <ul>
+                <li>2 cups rice</li>
+                <li>3 medium-sized tomatoes</li>
+                <li>chopped 1 large onion</li>
+                <li>chopped 2 scotch bonnet peppers (or to taste)</li>
+                <li>1 teaspoon thyme</li>
+                <li>2 teaspoons curry powder</li>
+                <li>2 bay leaves</li>
+                <li>3 cups meat stock</li>
+                <li>1/4 cup vegetable oil</li>
+                <li>Salt and pepper to taste</li>
+                <li>Stock cubes</li>
+                <li>Jollof Seasoning (optional)</li>
+                <li>1 red bell pepper</li>
+                <li>Assorted vegetables: green peas, sweet corn, carrots, etc (optional)</li>
+                <li>1 pound chicken or beef (optional)</li>
+            </ul>
+            <div class="jollof-item">
+                <iframe width="560" height="350"
+                    src="https://www.youtube.com/embed/z4tNAyRdo70?si=6Qt8CrXAJ98Suz_I&amp;start=61" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </article>
+    </section>
+
+    <div id="poll-container">
+        <h3>Which Jollof Rice would you consider trying?</h3>
+        <div id="poll-options">
+            <label>
+                <input type="radio" name="jollof" value="nigerian"> Nigerian Jollof
+            </label>
+            <label>
+                <input type="radio" name="jollof" value="ghanaian"> Ghanaian Jollof
+            </label>
+        </div>
+        <br>
+        <button id="vote-button">Vote</button>
+
+        <div id="poll-results">
+            <h4>Results:</h4>
+            <div id="nigerian-result">Nigerian Jollof: 0 votes</div>
+            <div id="ghanaian-result">Ghanaian Jollof: 0 votes</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Nigerian Jollof Rice Website. All rights reserved.</p>
+    </footer>
+    <script>
+        // Create a new poll
+        const poll = new PollJS.Poll({
+            question: "Which Jollof Rice do you prefer?",
+            answers: ["Nigerian Jollof", "Ghanaian Jollof"],
+            voteLimit: 1, // Allow only one vote per user
+            enableCookies: true, // Enable cookies to prevent multiple votes
+            dataStore: "localStorage", // You can also use "sessionStorage"
+        });
+
+        // Function to submit a vote
+        function submitVote() {
+            const selectedOption = document.querySelector('input[name="jollof"]:checked');
+            if (selectedOption) {
+                poll.vote(selectedOption.value);
+                updateResults();
+            }
+        }
+
+        // Function to update poll results
+        function updateResults() {
+            const results = poll.getResults();
+            document.getElementById("nigerian-result").textContent = `Nigerian Jollof: ${results["Nigerian Jollof"]} votes`;
+            document.getElementById("ghanaian-result").textContent = `Ghanaian Jollof: ${results["Ghanaian Jollof"]} votes`;
+        }
+    </script>
+
+</body>
+
+</html>

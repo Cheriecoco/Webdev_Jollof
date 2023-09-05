@@ -1,0 +1,189 @@
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff550001, #ff88001d);
+}
+
+/* Hero section styles */
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url("hero-image2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff5500;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #cc4400;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #222;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff5500;
+}
+
+/* About section styles */
+section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Recipe section styles */
+.recipe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipe-container img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.recipe-details {
+  margin-left: 40px;
+}
+
+.recipe-details h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/* Slideshow container styles */
+.slideshow-container {
+  position: relative;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Individual slide container styles */
+.Containers {
+  display: none; /* Hide all slides initially */
+  text-align: center;
+}
+
+/* Styling for images */
+.Containers img {
+  width: 100%; /* Make images responsive within their container */
+  max-height: 400px; /* Set a maximum height if needed */
+}
+
+/* MessageInfo and Info styles (for slide numbers and descriptions) */
+.MessageInfo, .Info {
+  text-align: center;
+}
+
+.Back {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0; /* Position on the left side */
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.forward {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0; /* Position on the right side */
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.Back:hover, .forward:hover {
+  background-color: #000; /* Change button background color on hover */
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 15s;
+  animation-name: fade;
+  animation-duration: 15s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+/* Footer styles */
+footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}

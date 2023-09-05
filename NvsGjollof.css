@@ -1,0 +1,117 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff550001, #ff88001d);
+    color: #ff5500;
+    /* Text color */
+
+}
+/* Center the content container */
+.jollof-debate {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+/* Center the poll container */
+#poll-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+/* Center the h1 element */
+h1 {
+    text-align: center;
+}
+
+/* Hero section styles */
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url("NGvsGH-flag.jpeg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.jollof-debate p {
+    color: #222
+}
+
+/* Navigation styles */
+nav {
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* Ensure it's above the hero image */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff5500;
+}
+
+.ghanaian-jollof img {
+    width: 35%; 
+    max-height: 300px; 
+}
+
+
+.nigerian-jollof img {
+    width: 35%; 
+    max-height: 300px; 
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
