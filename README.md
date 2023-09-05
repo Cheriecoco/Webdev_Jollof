@@ -2,7 +2,7 @@
 Beginner Portfolio using HTML CSS &amp; JavaScript Languages
 # Nigerian Jollof Rice Website
 
-![Website Preview](screenshot.png)
+![Website Preview]("C:\Users\Cherie Coco\Desktop\Lattimore&Friend\Screenshot.png"screenshot.png)
 
 ## Description
 
@@ -24,8 +24,8 @@ The Nigerian Jollof Rice Website is a dedicated platform celebrating the culinar
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 1]("C:\Users\Cherie Coco\Desktop\Lattimore&Friend\Screenshot1.png"screenshot1.png)
+![Screenshot 2]("C:\Users\Cherie Coco\Desktop\Lattimore&Friend\Screenshot2.png"screenshot2.png)
 
 ## How to Contribute
 
